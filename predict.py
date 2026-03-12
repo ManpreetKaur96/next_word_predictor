@@ -22,10 +22,13 @@ model, tokenizer, max_sequence_len = load_resources()
 
 def predict_next_words(text, n_words=3):
 
-    token_list = tokenizer.texts_to_sequences([text])[0]
+    token_list = tokenizer.texts_to_sequences([text])
+
+    if len(token_list[0]) == 0:
+        return []
 
     token_list = pad_sequences(
-        [token_list],
+        token_list,
         maxlen=max_sequence_len - 1,
         padding="pre"
     )
