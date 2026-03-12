@@ -66,13 +66,13 @@ new_next_word_predictor
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/next-word-predictor.git
+git clone https://github.com/ManpreetKaur96/next_word_predictor.git
 ```
 
 Go to the project folder
 
 ```bash
-cd next-word-predictor
+cd next_word_predictor
 ```
 
 Install required libraries
