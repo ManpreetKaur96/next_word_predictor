@@ -37,7 +37,7 @@ Users can use these suggestions as guidance and **manually type the next word** 
 # Project Structure
 
 ```
-new_next_word_predictor
+next_word_predictor
 │
 ├── app.py                          # Streamlit web application
 ├── predict.py                      # Predict next words using trained model
@@ -46,6 +46,7 @@ new_next_word_predictor
 ├── lstm_model.h5                   # Trained LSTM model
 ├── next_word_predictor.txt         # Dataset used for training
 ├── requirements.txt                # Required libraries
+├── runtime.txt                     # Specifies Python version for deployment
 ├── README.md                       # Project documentation
 │
 ├── next_word_predictor1.png        # Interface screenshot 1
@@ -80,6 +81,7 @@ Install required libraries
 ```bash
 pip install -r requirements.txt
 ```
+Note: This project uses TensorFlow 2.15 for compatibility with the deployment environment.
 
 # Train the Model
 
@@ -112,12 +114,29 @@ After running the command, open the **local Streamlit URL** in your browser.
 4. The predicted words are displayed as **suggestions**.
 5. The user can **manually type the next word** and click the **Predict button again** to get new suggestions.
 
+# Deployment 
+
+This project can be deployed using Streamlit Community Cloud.
+
+Steps:
+
+Upload the project to GitHub
+
+Go to Streamlit Community Cloud
+
+Select the repository
+
+Choose app.py as the main file
+
+Deploy the application
+
+After deployment, the web app will be accessible through a public URL.
+
 # Future Improvements
 
 * Use a **larger dataset** to improve prediction accuracy
 * Add **grammar correction and sentence completion**
 * Improve the **user interface design**
-* Deploy the application using **Streamlit Cloud or Hugging Face Spaces**
 * Add support for **multiple languages**
 
 # Author
