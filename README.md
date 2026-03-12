@@ -66,11 +66,7 @@ new_next_word_predictor
 Clone the repository
 
 ```bash
-<<<<<<< HEAD
-git clone https://github.com/ManpreetKaur96/next-word-predictor.git
-=======
 git clone https://github.com/ManpreetKaur96/next_word_predictor.git
->>>>>>> 1177a6c617e31e463c8a325471a7ca4e29f0814e
 ```
 
 Go to the project folder
