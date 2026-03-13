@@ -11,6 +11,14 @@ It uses a **Long Short-Term Memory (LSTM) neural network**, which is commonly us
 After entering a sentence, the model suggests **three possible next words**.  
 Users can use these suggestions as guidance and **manually type the next word** to continue predicting the sentence.
 
+## Live Demo
+
+Try the app online: [Next Word Predictor App](https://predict-next-word96.streamlit.app/)
+
+## GitHub Repository
+
+Check out the source code: [GitHub Repository](https://github.com/ManpreetKaur96/next_word_predictor)
+
 # Features
 
 * Predicts **top 3 possible next words**
